@@ -1,4 +1,4 @@
-package restannotationdemo;
+package demo;
 
 import annotation.RESTAnnotation;
 
@@ -9,7 +9,8 @@ import annotation.RESTAnnotation;
  */
 public class Main {
 
-    @RESTAnnotation(path = "http://localhost:8080/RESTService/webresources/MyService/myGetMethod", library = "jax.rs", method = "GET", keys = {"id"}, values = {"1"})
+    @RESTAnnotation(path = "http://localhost:8080/RESTService/webresources/MyService/myGetMethod", 
+            library = "jax.rs", method = "GET", keys = {"id"}, values = {"1"})
     private String stuff;
 
     public static void main(String[] args) {
